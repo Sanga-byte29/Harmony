@@ -20,7 +20,7 @@
     "react-hot-toast": "^2.2.0",
     "react-icons": "^4.4.0",
     "sanity": "^2.29.3",
-    "stripe": "^9.6.0"
+    "stripe": "^9.8.0"
   },
   "devDependencies": {
     "@babel/core": "^7.18.2",

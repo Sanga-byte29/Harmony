@@ -8,6 +8,7 @@ import {
 } from "react-icons/ai";
 import { Product } from "../../components";
 import { useStateContext } from "../../context/StateContext";
+import useRouter from "next/router";
 
 const ProductDetails = ({ products, product }) => {
   const { image, name, details, price } = product;
@@ -28,6 +29,7 @@ const ProductDetails = ({ products, product }) => {
           <div className="small-images-container">
             {image?.map((item, i) => (
               <img
+                key={i}
                 src={urlFor(item)}
                 className={
                   i === index ? "small-image selected-image" : "small-image"
